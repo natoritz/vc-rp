@@ -1,5 +1,5 @@
 # Vice City Roleplay (SA-MP 0.3.DL)
-Servidor de SA-MP en la ciudad de Vice City creado sin base.
+SA-MP server in Vice City created from scratch.
 
 ## Dependencias
 - SA-MP 0.3.DL-R1 server (https://archive.org/download/sa-mp-0.3.dl/samp03DL_svr_R1_win32.zip)
@@ -12,25 +12,24 @@ Servidor de SA-MP en la ciudad de Vice City creado sin base.
 - samp-mysql-yinline-include v1.0.1 (https://github.com/maddinat0r/samp-mysql-yinline-include/releases/tag/v1.0.1)
 - YSI 4.0.2 (https://github.com/pawn-lang/YSI-Includes/releases/tag/v4.0.2)
 
-## Instalación rapida
-1. Instala las dependencias
-2. Copia los includes de la carpeta *includes* a tu compilador de Pawn
-2. Crea las bases de datos con el archivo *schemas/databases.sql*
-3. Importa cada archivo *.sql* de la carpeta *schemas* a su base de datos correspondiente
-4. Compila *filterscripts/maps.pwn* y *gamemodes/main.pwn*
-4. Configura *server.cfg* si es necesario
-5. Abre *samp-server.exe*
+## Quick Installation
+1. Install the dependencies.
+2. Copy the includes from the *includes* folder to your Pawn compiler.
+3. Create the databases using the *schemas/databases.sql* file.
+4. Import each *.sql* file from the *schemas* folder into its corresponding database.
+5. Compile *filterscripts/maps.pwn* and *gamemodes/main.pwn*.
+6. Configure *server.cfg* if necessary.
+7. Open *samp-server.exe*.
 
 ## Gamemode
 *(main.pwn)*
-- Comenta la línea **#define LOCAL_HOST** para habilitar el modo producción
-- Redefine **#define MAX_PLAYERS 50** según el máximo de slots de su servidor
-- Redefine **#define SAVE_ACCOUNTS_TIME** si es necesario, es el intervalo de tiempo de guardado de las cuentas online, por defecto es de **5 minutos**
-- **Las radios no funcionan debido a que dependen de un servidor, puedes activarlas usando tu propio servidor, para ello:**
-	- Redefine **#define RADIO_URL** del archivo *gamemodes/server/radios/header.inc*
+- Comment out the line **#define LOCAL_HOST** to enable production mode.
+- Redefine **#define MAX_PLAYERS 50** according to the maximum slots of your server.
+- Redefine **#define SAVE_ACCOUNTS_TIME** if necessary, which is the interval for saving online accounts, by default it is **5 minutes**.
+- **The radios do not work because they depend on a server; you can activate them using your own server by:**
+  - Redefining **#define RADIO_URL** in the *gamemodes/server/radios/header.inc* file.
 
-
-### Ignora los siguientes warnings de compilación
+### Ignore the following compiler warnings
 ```
 gamemodes\main.pwn(48) : warning 218: old style prototypes used with optional semicolumns
 gamemodes\player/pstats/funcs.inc(167) : warning 213: tag mismatch: expected tag none ("_"), but found "Float"
