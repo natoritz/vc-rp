@@ -1,7 +1,7 @@
 # Vice City Roleplay (SA-MP 0.3.DL)
 SA-MP server in Vice City created from scratch.
 
-## Dependencias
+## Dependencies
 - SA-MP 0.3.DL-R1 server (https://archive.org/download/sa-mp-0.3.dl/samp03DL_svr_R1_win32.zip)
 - Pawn Compiler 3.10.8 (https://github.com/pawn-lang/compiler/releases/tag/v3.10.8)
 - sscanf 2.8.2 (https://github.com/maddinat0r/sscanf/releases/tag/v2.8.2)
